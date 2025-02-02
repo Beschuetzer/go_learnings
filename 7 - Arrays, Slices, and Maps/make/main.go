@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+type FloatMap map[string]float64
+
 // the 'make' function tells Go "I'm going to be adding X number of elements to the array soon" so start with a bigger array 
 // so as not to have to remake the array when I do
 func main() {
@@ -24,7 +26,7 @@ func main() {
 
 	//making maps can impore performance if you know roughly how many items to expect
 	//this will pre-allocate memory to accomodate for 100 items
-	courseRatings := make(map[string]float64, 100)
+	courseRatings := make(FloatMap, 100)
 	courseRatings["go"] = 4.7
 	courseRatings["react"] = 4.2
 
