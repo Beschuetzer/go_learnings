@@ -38,7 +38,7 @@ func main () {
 	}
 
 	//the same syntax for iteratin maps
-	for index, value := range websites {
-		fmt.Printf("website's index '%v' is '%v'\n", index, value)
+	for key, value := range websites {
+		fmt.Printf("website's key '%v' is '%v'\n", key, value)
 	}
 }
